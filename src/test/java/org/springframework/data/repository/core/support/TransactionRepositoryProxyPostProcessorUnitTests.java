@@ -15,9 +15,7 @@
  */
 package org.springframework.data.repository.core.support;
 
-import static org.mockito.Matchers.anyBoolean;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Matchers.isA;
+import static org.mockito.Matchers.*;
 import static org.mockito.Mockito.*;
 
 import java.util.HashMap;
@@ -32,8 +30,6 @@ import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.dao.support.PersistenceExceptionTranslationInterceptor;
 import org.springframework.dao.support.PersistenceExceptionTranslator;
-import org.springframework.data.repository.core.support.RepositoryProxyPostProcessor;
-import org.springframework.data.repository.core.support.TransactionalRepositoryProxyPostProcessor;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 /**

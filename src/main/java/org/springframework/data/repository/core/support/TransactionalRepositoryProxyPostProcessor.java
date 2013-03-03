@@ -74,12 +74,9 @@ class TransactionalRepositoryProxyPostProcessor implements RepositoryProxyPostPr
 	}
 
 	/*
-			 * (non-Javadoc)
-			 *
-			 * @see
-			 * org.springframework.data.repository.support.RepositoryProxyPostProcessor
-			 * #postProcess(org.springframework.aop.framework.ProxyFactory)
-			 */
+	 * (non-Javadoc)
+	 * @see org.springframework.data.repository.core.support.RepositoryProxyPostProcessor#postProcess(org.springframework.aop.framework.ProxyFactory, java.lang.Object)
+	 */
 	public void postProcess(ProxyFactory factory) {
 
 		factory.addAdvice(petInterceptor);
